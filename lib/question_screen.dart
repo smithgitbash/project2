@@ -40,9 +40,9 @@ widget.onSelectedAnswer(SelectedAnswer);
               height: 20,
             ),
              ...currentQuestion.getShuffledAnswer().map((answer){
-              return Button(onTap: (){
-                 changeQuestion(answer);
-              }, text: answer);
+              return Button(clicked: (){
+                return changeQuestion(answer);
+              }, answer: answer);
              })
             ,
            
